@@ -8,12 +8,11 @@ Write a function named longestString that takes in an array of strings and retur
 
 const longestString = (arr) => {
   // Solution code here...
-  let longest = '';
-  for (let item of arr) {
-    if (item.length > longest.length) longest = item;
-  };
-  return arr.indexOf(arr.longest);
-};
+let longest = arr.reduce(
+  (a, b, i) => arr[a].length < b.length ? i : a,
+  0
+);
+return longest;
 
 
 
