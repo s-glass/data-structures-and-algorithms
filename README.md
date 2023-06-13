@@ -20,4 +20,4 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+- Each 401 Python code challenge has it's own README file and any other needed files, all of which live under the Python folder and code_challenges subfolder in this Repo.
