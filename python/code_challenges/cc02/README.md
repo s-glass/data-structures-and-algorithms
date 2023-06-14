@@ -20,12 +20,13 @@ Created in a group with Dan Quinn, Jared Ciccarello, and Ashley Taylor
 
 ### Solution
 
-list = [ 5, 6, 7, 8 ]   # example list numbers
-value = 10              # value to add
+```
+list = [ 5, 6, 7, 8 ]
+value = 10
 
 def insertShiftArray
      midpoint = len(list) // 2
      list[0:midpoint] + [value] + list[midpoint:]
 
 print insertShiftArray ==> [ 5, 6, 10, 7, 8 ]
-
+```
