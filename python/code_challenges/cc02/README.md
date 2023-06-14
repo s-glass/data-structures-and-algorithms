@@ -20,11 +20,12 @@ Created in a group with Dan Quinn, Jared Ciccarello, and Ashley Taylor
 
 ### Solution
 
-`list = [ 3, 12, 17, 2, 8 ] # these are random list numbers
+list = [ 5, 6, 7, 8 ]   # example list numbers
+value = 10              # value to add
 
 def insertShiftArray
-    midpoint = len(list) // 2
-    shiftArray = list[0:midpoint] + [value to be added] + list[midpoint:]
+     midpoint = len(list) // 2
+     list[0:midpoint] + [value] + list[midpoint:]
 
-print insertShiftArray => [ 3, 12, 17, value to be added, 2, 8 ]`
+print insertShiftArray ==> [ 5, 6, 10, 7, 8 ]
 
