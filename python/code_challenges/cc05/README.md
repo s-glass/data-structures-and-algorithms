@@ -37,6 +37,8 @@ No whiteboard for this assignment.
 
 pytest tests/data_structures/test_linked_list.py
 
+[Link to the code](https://s-glass.github.io/data-structures-and-algorithms/python/data_structures/linked_list)
+
 ### Solution
 
 ```
