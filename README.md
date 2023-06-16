@@ -18,6 +18,16 @@ To run your tests
 - run `npm test` to run all of the tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
-### 401 Data Structures, Code Challenges
+### Code 401 Reading Notes - Advanced Software Development, Python
+## Data Structures, Code Challenges
 
 - Each 401 Python code challenge has it's own README file and any other needed files, all of which live under the Python folder and code_challenges subfolder in this Repo.
+
+
+## Table of Contents
+
+* [Code Challenge 01: Array Reverse](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc01)
+* [Code Challenge 02: Array Insert Shift](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc02)
+* [Code Challenge 03: Array Binary Serach](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc03)
+* [Code Challenge 04: Mock Interviews](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc04)
+* [Code Challenge 05: Linked List](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc05)
