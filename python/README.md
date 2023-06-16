@@ -74,3 +74,12 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - **Run every possible test** - `pytest`
 - **Run filtered tests** - `pytest -k some_filter_text`
 - **Run in watch mode** - `ptw` or `pytest-watch`
+
+
+## Table of Contents
+
+* [Code Challenge 01: Array Reverse](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc01)
+* [Code Challenge 02: Array Insert Shift](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc02)
+* [Code Challenge 03: Array Binary Serach](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc03)
+* [Code Challenge 04: Mock Interviews](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc04)
+* [Code Challenge 05: Linked List](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc05)
