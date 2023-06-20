@@ -33,31 +33,45 @@ class LinkedList:
         return False
 
 
-    def append(self, value):
-        new_node = Node(value)
-        current = self.head
-        while current.next != None:
-            current = current.next
-            list.append()
+    # append arguments: new value, adds new node with given value to the end of the list
+    #if/else added with search from chat GPT
 
+    def append(self, value):
+         new_node = Node(value)
+         if self.head is None:
+            self.head = new_node
+         else:
+            current = self.head
+            while current.next:
+                current = current.next
+            current.next = new_node
+
+    # insert before arguments: value, new value
+    # adds new node with given new value immediately before the first node that has the value specified
 
     def insert_before(self, value, new_value):
         new_node = Node(new_value)
+        if self.head and self.head.value == value:
+            new_node.next = self.head
+            self.head = new_node
         current = self.head
-        while current.head != value:
+        while current.next.value != value:
             current = current.next
-            if self.head:
-                Node.next = self.head
-            self.head = Node
-            list.insert(head, value)
+        temp = current.next
+        current.next = new_node
+        new_node.next = temp
 
-    # def insert_after(self, value, new_value):
-    #     new_node = Node(new_value)
-    #     current = self.head
-    #     while current.head != value:
-    #         current = current.next
-    #         if self.head:
-    #             Node.next =
+    # insert after arguments: value, new value
+    # adds new node with given new value immediately after first node that has the value specified
+
+    def insert_after(self, value, new_value):
+        new_node = Node(new_value)
+        current = self.head
+        while current.value != value:
+            current = current.next
+        temp = current.next
+        current.next = new_node
+        new_node.next = temp
 
 
 
