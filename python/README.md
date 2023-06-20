@@ -83,3 +83,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 * [Code Challenge 03: Array Binary Serach](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc03)
 * [Code Challenge 04: Mock Interviews](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc04)
 * [Code Challenge 05: Linked List](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc05)
+* [Code Challenge 06: Linked List Insertions](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc06)
