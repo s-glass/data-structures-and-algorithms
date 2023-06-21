@@ -50,30 +50,36 @@ class LinkedList:
     # adds new node with given new value immediately before the first node that has the value specified
 
     def insert_before(self, value, new_value):
-        new_node = Node(new_value)
-        if self.head and self.head.value == value:
-            new_node.next = self.head
-            self.head = new_node
-        current = self.head
-        while current.next.value != value:
-            current = current.next
-        temp = current.next
-        current.next = new_node
-        new_node.next = temp
+        try:
+            new_node = Node(new_value)
+            if self.head and self.head.value == value:
+                new_node.next = self.head
+                self.head = new_node
+            current = self.head
+            while current.next.value != value:
+                current = current.next
+            temp = current.next
+            current.next = new_node
+            new_node.next = temp
+        except Exception as e:
+            raise TargetError
 
     # insert after arguments: value, new value
     # adds new node with given new value immediately after first node that has the value specified
 
     def insert_after(self, value, new_value):
-        new_node = Node(new_value)
-        current = self.head
-        while current.value != value:
-            current = current.next
-        temp = current.next
-        current.next = new_node
-        new_node.next = temp
+        try:
+            new_node = Node(new_value)
+            current = self.head
+            while current.value != value:
+                current = current.next
+            temp = current.next
+            current.next = new_node
+            new_node.next = temp
+        except Exception as e:
+            raise TargetError
 
 
 
-class TargetError:
+class TargetError(Exception):
     pass
