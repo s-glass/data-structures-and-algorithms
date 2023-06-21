@@ -1,50 +1,79 @@
 ## Code Challenge: Class 05
 
 **Description:**
-* Create a function called BinarySearch which takes in 2 parameters: a sorted array and the search key.
+* Create a node class with properties for value stored in node and pointer to next node.
 
-* Without using built-ins, return the index of the array's element equal to the value of the search key, or -1 if the element is not in the array.
+* Create a linked list class with head property linked list created upon instantiation with the following methods:
 
-Created with XYZ
+(1) insert
+ - artuments: value
+ - returns: nothing
+ - adds new node with that value to the head of the list, with an O(1) Time performance
 
-[Code source](https://www.geeksforgeeks.org/python-program-for-binary-search/)
+(2) includes
+ - arguments: value
+ - returns: boolean; indicates whether that value exists as a node's value somewhere in the list
 
+(3) to string
+ - arguments: none
+ - returns: string representing all values in the Linked List, formatted as
+
+Created with Dan Quinn, Anthony Sinitsa, Jared Ciccarello
+
+The 4 tests at the bottom came from a comparison/review of tests prompted from AI via Bard & Chat GPT.
 
 ### Whiteboard Process
 
-![Code Challenge 05](cc05-whiteboard.png)
+No whiteboard for this assignment.
 
 ### Approach & Efficiency
 
-* This approach creates a function that sets the array's low/mid/high, creates a loop with if/else statement telling the code to focus on left/right/mid depending on if x is at/higher/lower than mid, then returns index when reached, or -1 if not present.
+* This approach creates node and linked list classes which includes the following methods (1) insert, (2) includes, and (3) to string.
 
 * Big O include a time complexity of 0(1) and space complexity of 0(1).
+
+
+### How to initialize/run the code tests
+
+pytest tests/data_structures/test_linked_list.py
 
 ### Solution
 
 ```
-def BinarySearch(arr, searchKey) :
-        low = 0
-        high = len(arr) -1
-        mid = 0
+class Node:
+    def __init__(self, value, _next=None):
+        self.value = value
+        self.next = _next
 
-        while low <= high:
-            mid = (high + low) // 2
-
-            if arr[mid] <  searchKey:
-                    low = mid + 1
-
-            elif arr[mid] > searchKey:
-                    high = mid - 1
-
-            else:
-                    return mid
-
-        return -1
+class LinkedList:
+    def __init__(self, head=None, values=None, insert=None):
+        self.head = None
 
 
-if result != -1:
-        print("Element is present at index", str(result))
-else:
-        print("Element is not present in array")
+    def insert(self, value):
+        self.head = Node(value, self.head)
+
+    def __str__(self):
+        if self.head == None:
+         return "NULL"
+        else:
+            current = self.head
+            output = ""
+            while current:
+                output += f"{{ {current.value} }} -> "
+                current = current.next
+            output += "NULL"
+            return output
+
+
+    def includes(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return True
+            current = current.next
+        return False
+
+class TargetError:
+    pass
 ```
