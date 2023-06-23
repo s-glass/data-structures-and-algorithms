@@ -84,4 +84,6 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 * [Code Challenge 04: Mock Interviews](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc04)
 * [Code Challenge 05: Linked List](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc05)
 * [Code Challenge 06: Linked List Insertions](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc06)
-* [Code Challenge 06: Linked List Kth from end](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc07)
+* [Code Challenge 07: Linked List Kth from end](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc07)
+* [Code Challenge 08: Linked List Kth from end](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc08)
+* [Code Challenge 10: Linked List Kth from end](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc10)
