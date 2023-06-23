@@ -26,7 +26,9 @@ The Big O is:
 
 ### Solution
 
-'def __str__(self):
+```python
+
+def __str__(self):
         result = ""
         current = self.head
         while current:
@@ -52,15 +54,15 @@ def zip_lists(list1, list2):
     while current2:
         results_LL.append(current2.value)
         current2 = current2.next
-    return str(results_LL)'
-
+    return str(results_LL)
+```
 
 ### Chat GPT Prompt & Code help
 
 while given two linked lists, I need to zip them into one and return a  new zipped linked list.
 Considering this, will this code work? :
 
-
+```python
 def zip_lists(list1, list2):
         current1 = list1.head
         current2 = list2.head
@@ -89,6 +91,7 @@ def zip_lists(list1, list2):
                results_LL = result2_LL.append
         stringified_linked_list = str(results_LL)
         return stringified_linked_list
+```
 
 ChatGPT
 The code you provided has several issues and will not work as expected. Here are the problems and suggested corrections:
