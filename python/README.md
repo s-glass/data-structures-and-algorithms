@@ -78,12 +78,13 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
 ## Table of Contents
 
-* [Code Challenge 01: Array Reverse](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc01)
-* [Code Challenge 02: Array Insert Shift](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc02)
-* [Code Challenge 03: Array Binary Serach](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc03)
-* [Code Challenge 04: Mock Interviews](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc04)
-* [Code Challenge 05: Linked List](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc05)
-* [Code Challenge 06: Linked List Insertions](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc06)
-* [Code Challenge 07: Linked List Kth from end](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc07)
-* [Code Challenge 08: Linked List Kth from end](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc08)
-* [Code Challenge 10: Linked List Kth from end](https://s-glass.github.io/data-structures-and-algorithms/python/code_challenges/cc10)
+* [Code Challenge 01: Array Reverse](python/code_challenges/cc01)
+* [Code Challenge 02: Array Insert Shift](python/code_challenges/cc02)
+* [Code Challenge 03: Array Binary Serach](python/code_challenges/cc03)
+* [Code Challenge 04: Mock Interviews](python/code_challenges/cc04)
+* [Code Challenge 05: Linked List](python/code_challenges/cc05)
+* [Code Challenge 06: Linked List Insertions](python/code_challenges/cc06)
+* [Code Challenge 07: Linked List Kth from end](python/code_challenges/cc07)
+* [Code Challenge 08: Linked List Zip](python/code_challenges/cc08)
+* [Code Challenge 10: Stack and Queue](python/code_challenges/cc10)
+* [Code Challenge 11: Stack and Queue Pseudo](python/code_challenges/cc11)
