@@ -88,3 +88,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 * [Code Challenge 08: Linked List Zip](python/code_challenges/cc08)
 * [Code Challenge 10: Stack and Queue](python/code_challenges/cc10)
 * [Code Challenge 11: Stack and Queue Pseudo](python/code_challenges/cc11)
+* [Code Challenge 11: Stack Queue Animal Shelter](python/code_challenges/cc12)
