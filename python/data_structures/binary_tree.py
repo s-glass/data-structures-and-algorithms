@@ -43,12 +43,28 @@ class BinaryTree:
 
         walk(self.root, values)
         return values
-"""
-Create a Binary Tree class
-Define a method for each of the depth first traversals:
-pre order
-in order
-post order
-Each depth first traversal method should return an array of values, ordered appropriately.
 
-"""
+    def find_maximum_value(self):
+        # Initialize a variable to store the maximum value.
+        max_value = None
+
+        # Set a variable to the root node of the tree.
+        node = self.root
+
+        # While the node is not None, do the following:
+        while node:
+
+            # If the current value of the node is greater than the current value of the maximum value,
+            # update the maximum value.
+            if not max_value or node.value > max_value:
+                max_value = node.value
+
+            # Set the node to the left child of the current node.
+            node = node.left
+
+        # If the maximum value is still None, return -1.
+        if max_value is None:
+            return -1
+
+        # Otherwise, return the value of the maximum value.
+        return max_value
