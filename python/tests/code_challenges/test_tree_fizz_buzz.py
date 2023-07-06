@@ -3,12 +3,12 @@ from code_challenges.tree_fizz_buzz import fizz_buzz_tree
 from data_structures.kary_tree import KaryTree, Node
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_exists():
     assert fizz_buzz_tree
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_one_to_15_fizzy_clone(tree):
 
     fizzy_tree = fizz_buzz_tree(tree)
@@ -36,7 +36,7 @@ def test_one_to_15_fizzy_clone(tree):
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_new_copy_returned(tree):
 
     fizz_buzz_tree(tree)
@@ -99,3 +99,34 @@ def tree():
     nine.children = [fourteen, fifteen]
 
     return KaryTree(one)
+
+
+# Extra tests for expected outcome, expected failure, and edge case
+
+# Expected Outcome, single node
+
+def test_single_node():
+    node = Node(7)
+    tree = KaryTree(node)
+    fizz_buzz_result = fizz_buzz_tree(tree)
+    expected = ["7"]
+    assert fizz_buzz_result.breadth_first() == expected
+
+
+# Expected Failure, non-integer values
+
+def test_non_integer_values():
+    tree = KaryTree(Node("Hello", [Node("World")]))
+    fizzy_tree = fizz_buzz_tree(tree)
+    actual = fizzy_tree.breadth_first()
+    expected = ["Hello", "World"]
+    assert actual == expected
+
+
+# Edge Case, empty tree
+
+def test_empty_tree():
+    tree = KaryTree()
+    fizzy_tree = fizz_buzz_tree(tree)
+    actual = fizzy_tree.breadth_first()
+    assert actual == []
