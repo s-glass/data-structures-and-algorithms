@@ -76,11 +76,6 @@ After all the elements from the `input` array have been inserted into the `sorte
 If we wanted to turn this into complete code, we could use the following instead of pseudocode:
 
 ```python
-
-Sure! Here's the equivalent Python code for the given pseudocode:
-
-python
-Copy code
 def Insert(sorted_arr, value):
     i = 0
     while value > sorted_arr[i]:
