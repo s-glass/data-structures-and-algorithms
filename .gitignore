@@ -231,3 +231,11 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/node,macos,linux,windows,webstorm,visualstudiocode
+
+
+.venv
+.pytest_cache
+__pycache__
+.vscode
+poetry.lock
+.idea
