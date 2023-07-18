@@ -99,4 +99,4 @@ def InsertionSort(input_arr):
     return sorted_arr
 ```
 
-![Visual Step-By-Step](/insertion/cc26-visual.png)
+![Visual Step-By-Step](cc26-viaual.png)
