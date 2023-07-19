@@ -46,9 +46,9 @@ Let's do a step-through of this process using an example input array:
 
 `[8,4,23,42,16,15]`
 
-![Visual Step-By-Step image](/sorting/insertion/cc27-visual1.png)
+![Visual Step-By-Step image](/sorting/merge/cc27-visual1.png)
 
-![Visual Step-By-Step table](/sorting/insertion/cc27-visual2.png)
+![Visual Step-By-Step table](/sorting/merge/cc27-visual2.png)
 
 
 If we wanted to turn this into complete code, we could use the following instead of pseudocode:
