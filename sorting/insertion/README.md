@@ -30,7 +30,9 @@ Let's do a step-through of this process using an example input array:
 
 `[8,4,23,42,16,15]`
 
-Take a look at the visual at the bottom of the blog to follow along.
+Take a look at the visual below to follow along.
+
+![Visual Step-By-Step](/sorting/insertion/cc26-visual.png)
 
 In the `Insert` function, `i` will traverse the `sorted` array to find the right position the `value` needs to be inserted at. Since the `Insert` function initializes i to 0, let's start at our index value at 0 and take a look at our first `value`, which is 8.
 
@@ -94,4 +96,6 @@ def InsertionSort(input_arr):
     return sorted_arr
 ```
 
-![Visual Step-By-Step](/sorting/insertion/cc26-visual.png)
+**Resources/Sources Referenced**
+
+Used chatGPT for code and blog reference

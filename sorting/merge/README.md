@@ -83,3 +83,7 @@ def Merge(left, right, arr):
         j += 1
         k += 1
 ```
+
+**Resources/Sources Referenced**
+
+Used chatGPT for code and blog reference
