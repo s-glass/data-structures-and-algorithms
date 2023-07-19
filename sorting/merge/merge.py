@@ -26,10 +26,4 @@ def Merge(left, right, arr):
         arr[k] = right[j]
         j += 1
         k += 1
-
-# Example:
-if __name__ == "__main__":
-    arr = [38, 27, 43, 3, 9, 82, 10]
-    MergeSort(arr)
-    print(arr)
-# Output: [3, 9, 10, 27, 38, 43, 82]
+    return arr

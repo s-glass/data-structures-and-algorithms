@@ -1,54 +1,62 @@
+import pytest
+from merge import MergeSort, Merge
+
+# empty array
+# array of one
+# array with duplicates
+
+
 # Testing first function, MergeSort
 
 @pytest.mark.skip("TODO")
-def test_mergesort_happy_path():
-    arr = [38, 27, 43, 3, 9, 82, 10]
-    expected_output = [3, 9, 10, 27, 38, 43, 82]
+def test_mergesort_empty_array():
+    arr = []
+    expected_output = []
     MergeSort(arr)
     assert arr == expected_output
 
 @pytest.mark.skip("TODO")
-def test_mergesort_edge_case():
+def test_mergesort_single_item():
     arr = [5]
     expected_output = [5]
     MergeSort(arr)
     assert arr == expected_output
 
 @pytest.mark.skip("TODO")
-def test_mergesort_error_case():
-    arr = None
-    try:
-        MergeSort(arr)
-    except TypeError as e:
-        assert str(e) == "'NoneType' object has no attribute 'length'"
+def test_mergesort_duplicates():
+    arr = [38, 27, 43, 3, 9, 27, 10, 3]
+    expected_output = [3, 3, 9, 10, 27, 27, 38, 43]
+    MergeSort(arr)
+    assert arr == expected_output
+
+
 
 # Testing second function, Merge
 
 @pytest.mark.skip("TODO")
-def test_merge_happy_path():
-    left = [3, 9, 27]
-    right = [10, 38, 43, 82]
+def test_merge_empty_array():
+    left = []
+    right = []
     arr = [0] * (len(left) + len(right))
-    expected_output = [3, 9, 10, 27, 38, 43, 82]
+    expected_output = []
     Merge(left, right, arr)
     assert arr == expected_output
 
 @pytest.mark.skip("TODO")
-def test_merge_edge_case():
+def test_merge_single_item():
     left = [1]
-    right = [2]
+    right = []
     arr = [0] * (len(left) + len(right))
-    expected_output = [1, 2]
+    expected_output = [1]
     Merge(left, right, arr)
     assert arr == expected_output
 
 @pytest.mark.skip("TODO")
-def test_merge_error_case():
-    left = [1, 2]
-    right = [3, 4]
-    arr = [0] * (len(left) + len(right) - 1)  # Error: arr length is not enough for merged result
-    try:
-        Merge(left, right, arr)
-    except IndexError as e:
-        assert str(e) == "list assignment index out of range"
+def test_merge_duplicates():
+    left = [1, 3, 9]
+    right = [3, 10, 27]
+    arr = [0] * (len(left) + len(right))
+    expected_output = [1, 3, 3, 9, 10, 27]
+    Merge(left, right, arr)
+    assert arr == expected_output
 
