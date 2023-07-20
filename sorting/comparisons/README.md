@@ -4,6 +4,9 @@ In the first half of this code challenge, you will write functions which sort do
 
 In the second half of the code challenge, you will write tests for your comparator functions. This may necessitate refactoring the code you wrote in part one. Your tests will need to call the comparator functions directly, and make assertions about the response values given test inputs.
 
+
 **Resources/Sources Referenced**
 
+[Source1](https://medium.com/voice-of-code/sorting-comparator-21d98c192bbb)
+[Source2](https://learnpython.com/blog/python-custom-sort-function/)
 Used chatGPT for code and blog reference
