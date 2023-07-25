@@ -1,7 +1,7 @@
 ## Code Challenge: Class 31
 
 Sarah Glass for 401 Python
-Collaborated with Anthony, Dan, and Logan in the class at a Remo table
+Collaborated with Anthony, Dan, Slava, and Logan in the class at a Remo table
 
 **Description:**
 
