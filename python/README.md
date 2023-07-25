@@ -90,4 +90,13 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 * [Code Challenge 11: Stack and Queue Pseudo](python/code_challenges/cc11)
 * [Code Challenge 12: Stack Queue Animal Shelter](python/code_challenges/cc12)
 * [Code Challenge 13: Stack Queue Brackets](python/code_challenges/cc13)
-* [Code Challenge 15: Trees](python/code_challenges/cc15)
+* [Code Challenge 15: Binary Tree and BST Implementation](python/code_challenges/cc15)
+* [Code Challenge 16: Max Value Binary Tree](python/code_challenges/cc16)
+* [Code Challenge 17: Breadth-First Tree Traversal](python/code_challenges/cc17)
+* [Code Challenge 18: Fizzbuzz on a K-ary Tree](python/code_challenges/cc18)
+* Code Challenge 26: Insertion Sort: outside of Python folder in the DSA Sorting folder
+* Code Challenge 27: Merge Sort: outside of Python folder in the DSA Sorting folder
+* Code Challenge 28: Sorting Comparisons: outside of Python folder in the DSA Sorting folder
+* [Code Challenge 30: Hash Tables](python/data_structures/hashtable.py)
+* [Code Challenge 31: Hashtables Repeated Word](python/code_challenges/cc31)
+* [Code Challenge 31: Hashtables ---](python/code_challenges/cc32)
