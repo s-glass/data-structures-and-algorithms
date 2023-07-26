@@ -1,50 +1,41 @@
-import pytest
-from code_challenges.tree_intersection import tree_intersection
-from data_structures.binary_tree import BinaryTree, Node
-from data_structures.queue import Queue
+## Code Challenge: Class 32
+
+Sarah Glass for 401 Python
+Collaborated with Anthony, Dan, Andrew, Slava, and Logan in the class at a Remo table
+
+**Description:**
+
+Feature Tasks:
+
+- Write a function called `tree_intersection` that takes two binary trees as parameters.
+- Using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
+- Write at least three test assertions for each method that you define.
 
 
-def test_exists():
-    assert tree_intersection
+### Whiteboard Process
 
+![Code Challenge 32](cc32-whiteboard.png)
 
-@pytest.mark.skip("TODO")
-def test_tree_intersection():
+### Approach & Efficiency
 
-    tree_a = BinaryTree()
-    values = [150, 100, 250, 75, 160, 200, 350, 125, 175, 300, 500]
-    add_values_to_empty_tree(tree_a, values)
+Time: O(n)  - traversing through each word in the string via dictionary
+Space: O(m) + O(k) where m is number of words, and k is number of unique words (this space requirement taken as suggetion from chatGPT)
 
-    tree_b = BinaryTree()
-    values = [42, 100, 100, 15, 160, 200, 350, 125, 175, 4, 500]
-    add_values_to_empty_tree(tree_b, values)
+### Solution
 
-    actual = tree_intersection(tree_a, tree_b)
-    expected = [125, 175, 100, 160, 500, 200, 350]
+[Stack](code_challenges/tree_intersection.py)
 
-    assert sorted(actual) == sorted(expected)
+### Chat GPT Prompt & Code Help
 
-@pytest.mark.skip("TODO")
-def add_values_to_empty_tree(tree, values):
-    """
-    Helper function to add given values to BinaryTree
-    """
-    tree.root = Node(values.pop())
-    q = Queue()
+Help from TAs and Chat GPT help with figuring out space complexity and writing tests.
 
-    q.enqueue(tree.root)
+Prompt:
 
-    while values:
-        node = q.dequeue()
-        node.left = Node(values.pop())
-        node.right = Node(values.pop()) if values else None
-        q.enqueue(node.left)
-        q.enqueue(node.right)
+Given this code and these tests, what are examples of tests that could be added to check that the tree_intersection function for a happy path, edge case, and error case?
 
-# add 3 tests per function
+Response:
 
-# Happy Path
-@pytest.mark.skip("TODO")
+```python
 def test_tree_intersection_happy_path():
     # Create two binary trees with common values
     tree_a = BinaryTree()
@@ -59,8 +50,6 @@ def test_tree_intersection_happy_path():
     expected = [1, 2, 4, 6, 9]
     assert sorted(tree_intersection(tree_a, tree_b)) == sorted(expected)
 
-# Edge Case
-@pytest.mark.skip("TODO")
 def test_tree_intersection_edge_case():
     # Create two binary trees with only one node (same value)
     tree_a = BinaryTree()
@@ -73,9 +62,6 @@ def test_tree_intersection_edge_case():
     expected = [5]
     assert tree_intersection(tree_a, tree_b) == expected
 
-
-# Error Case
-@pytest.mark.skip("TODO")
 def test_tree_intersection_error_case():
     # Test with one of the binary trees being None
     tree_a = BinaryTree()
@@ -99,3 +85,4 @@ def test_tree_intersection_error_case():
     # We can expect the function to raise an appropriate exception when invalid data types are provided
     with pytest.raises(Exception):
         tree_intersection(tree_c, invalid_input)
+```
