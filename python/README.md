@@ -99,4 +99,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 * Code Challenge 28: Sorting Comparisons: outside of Python folder in the DSA Sorting folder
 * [Code Challenge 30: Hash Tables](python/data_structures/hashtable.py)
 * [Code Challenge 31: Hashtables Repeated Word](python/code_challenges/cc31)
-* [Code Challenge 31: Hashtables ---](python/code_challenges/cc32)
+* [Code Challenge 32: Common Values in Binary Trees](python/code_challenges/cc32)
