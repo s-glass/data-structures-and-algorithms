@@ -6,7 +6,7 @@ def test_exists():
     assert Graph
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_add_node():
 
     graph = Graph()
@@ -18,7 +18,7 @@ def test_add_node():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_size_empty():
 
     graph = Graph()
@@ -30,7 +30,7 @@ def test_size_empty():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_size():
 
     graph = Graph()
@@ -44,7 +44,7 @@ def test_size():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_add_edge():
     g = Graph()
     apple = g.add_node("apple")
@@ -56,7 +56,7 @@ def test_add_edge():
     assert neighbors[0].weight == 5
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_bouquet():
     g = Graph()
     apple = g.add_node("apple")
@@ -67,7 +67,7 @@ def test_bouquet():
     assert neighbors[0].weight == 10
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_add_edge_interloper_start():
 
     graph = Graph()
@@ -80,7 +80,7 @@ def test_add_edge_interloper_start():
         graph.add_edge(start, end)
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_add_edge_interloper_end():
 
     graph = Graph()
@@ -93,7 +93,7 @@ def test_add_edge_interloper_end():
         graph.add_edge(start, end)
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_get_nodes():
 
     graph = Graph()
@@ -111,7 +111,7 @@ def test_get_nodes():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_get_neighbors():
 
     graph = Graph()
@@ -131,3 +131,23 @@ def test_get_neighbors():
     assert neighbor_edge.vertex.value == "banana"
 
     assert neighbor_edge.weight == 44
+
+
+
+def test_proper_size():
+    graph = Graph()
+    vertex_a = graph.add_node("vertex_a")
+    vertex_b = graph.add_node("vertex_b")
+    vertex_c = graph.add_node("vertex_c")
+    assert graph.size() == 3
+
+
+def test_graph_with_single_vertex_and_edge():
+    graph = Graph()
+    vertex_a = graph.add_node("vertex_a")
+    graph.add_edge(vertex_a, vertex_a, weight=10)
+    assert graph.size() == 1
+    neighbors = graph.get_neighbors(vertex_a)
+    assert len(neighbors) == 1
+    assert neighbors[0].vertex == vertex_a
+    assert neighbors[0].weight == 10
