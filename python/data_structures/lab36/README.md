@@ -11,7 +11,6 @@
 - No code files accepted. All work should be done within whiteboard.
 - Your white board tool is up to you.
 
--
 ### Whiteboard Process
 
 ![Lab 36 Whiteboard 01](lab36-whiteboard01.png)
